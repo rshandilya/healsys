@@ -10,7 +10,7 @@ class HospitalSerializers(serializers.HyperlinkedModelSerializer):
     departments = serializers.HyperlinkedRelatedField(
         read_only = True,
         many = True,
-        view_name = 'departments-detail')
+        view_name = 'department-detail')
 
 
     class Meta:
